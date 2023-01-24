@@ -1,0 +1,12 @@
+Membuat table di HTML
+Ada beberapa tag yang digunakan untuk membuat table di HTML:
+<tablle> --> membungkus tablenya
+<thead> --> membungkus bagian kepala table
+<tbody> --> membungkus bagian body dari table
+<tr> (table row) --> membungkus baris
+<td> (table data) --> membuat sel
+<th> (table head) --> membaut judul pada header
+
+Menambahakan warna
+Untuk menambahkan warna pada sel dan baris, kita bisa memberikan atribut bgcolor di dalam tag <td> (untuk sel) atau <tr> (untuk baris). Nilai atribut bgcolor bisa kita isi dengan kode warna dalam heksadesinal atau nama warna dalam bahasa
+

@@ -1,0 +1,45 @@
+Image/gambar akan membuat website kita terlihat menarik. Karena otak kita lebih mudah menyerap informasi dengan visual dibandingkan hanya teks saja. Karena itu, gambar sangatlah penting. <br>
+
+ <img src="https://polinela.ac.id/wp-content/uploads/2021/06/pmb_polinela_2021_3-1204x642.jpg" alt="Politeknik Negeri Lampung" width="500px" height="500px" style="width: 500px; height: 500px; border-radius: 100%; border: 5px solid red;">
+<br><br>
+
+Atribut Image: <br>
+1. alt --> Teks alternatif untuk gambar saat gagal ditampilkan;<br>
+2. width --> Menentukan lebar gambar;<br>
+3. height --> Menentukan tinggi gambar;<br>
+4. style --> Menentukan style CSS untuk gambar. <br><br>
+
+Atribut Style: merupakan atribut untuk menambahkan style CSS pada sebuah elemen. Atribut ini sering digunakan pada gambar untuk memberikan style atau efek tertentu. <br><br>
+
+Agar gambar bisa ditampilkan sebagai background, maka kita harus menggunakan CSS dengan atribut background-image lalu diisi dengan URL dari gambar. <br>
+
+<body style="background-image: url(https://cdn-cms.pgimgs.com/static/2022/04/Alt-text-10.Warna-Hijau-Neon.png);"></body><br>
+
+Membuat Link Dengan Gambar: <br>
+<a href="https://www.instagram.com/_febrii0/"><img src="https://cdn.idntimes.com/content-images/community/2022/04/image-0078fad41e2f5683be09bf424a9c0cd1_600x400.jpg" alt="Instagram Febrii" style="border-radius: 100%; border: 5px solid red; height: 200px; width: 200px;"></a><br>
+
+Membuat Link Pada Bagian Gambar: <br>
+<p>
+    <img src="https://www.w3schools.com/html/workplace.jpg" usemap="#workmap"/>
+    <map name="#workmap">
+        <area shape="rect" coords="34, 44, 270, 350" href="#!" title="Phone">
+        <area shape="circle" coords="337, 300, 44" href="#!" title="Coffee">
+    </map>
+</p>
+<br>
+
+Tag figure berfungsi untuk membungkus tag img atau gambar dengan teks caption. Teks caption adalah teks yang menjelaskan tentang gambar. Teks caption bisa dibuat dengan tag figcaption. <br>
+Contoh:
+
+<figure>
+    <img src="https://cdn.idntimes.com/content-images/community/2022/04/image-0078fad41e2f5683be09bf424a9c0cd1_600x400.jpg" alt="Squidward" style="width: 400px; height: 400px; border-radius: 30%;">
+    <figcaption>Ini adalah gambar Squidward</figcaption>
+</figure>
+<br>
+
+Tag ini berfungsi untuk menentukan gambar mana yang akan ditampilkan pada ukuran layar tertentu. <br>
+ <picture>
+    <source media="(min-width: 650px)" srcset="https://cdn.idntimes.com/content-images/community/2022/04/image-0078fad41e2f5683be09bf424a9c0cd1_600x400.jpg">
+    <source media="(min-width: 450px)" srcset="https://cdn.idntimes.com/content-images/community/2022/04/image-0078fad41e2f5683be09bf424a9c0cd1_600x400.jpg">
+    <img src="https://cdn.idntimes.com/content-images/community/2022/04/image-0078fad41e2f5683be09bf424a9c0cd1_600x400.jpg" alt="Squidward">
+ </picture>
