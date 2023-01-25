@@ -1,11 +1,11 @@
 # Materi Dasar - Pemrograman Web 1
 
-| Keterangan | - |
-| Nama | Febriansyah Agung Tirta |
-| NPM | 21753049 |
-| Jurusan | Ekonomi dan Bisnis |
-| Prodi | D3 Manajemen Informatika |
-| Instansi | Politeknik Negeri Lampung |
+| Keterangan    | -                         |
+| Nama          | Febriansyah Agung Tirta   |
+| NPM           | 21753049                  |
+| Jurusan       | Ekonomi dan Bisnis        |
+| Prodi         | D3 Manajemen Informatika  |
+| Instansi      | Politeknik Negeri Lampung |
 
 ## Note
 
