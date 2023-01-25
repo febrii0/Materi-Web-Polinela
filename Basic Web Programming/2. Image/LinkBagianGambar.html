@@ -11,6 +11,13 @@
     <p>
         Link dapat kita buat pada bagian tertentu pada gambar dengan menggunakan tag <samp>map</samp> dan <samp>area</samp>.
     </p>
-    
+    <p>Contoh:</p>
+    <p>
+        <img src="https://cdn.idntimes.com/content-images/community/2022/04/image-0078fad41e2f5683be09bf424a9c0cd1_600x400.jpg" alt="Squidward" style="width: 400px; height: 400px; border-radius: 30%;" usemap="#makemap">
+        <map name="makemap">
+            <area shape="default" href="#!" alt="Squidward" title="Squidward">
+            <!-- Kita tidak menggunakan coords karena menggunakan shape="default" -->
+        </map>
+    </p>
 </body>
 </html>
