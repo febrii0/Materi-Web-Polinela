@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjelasan Field</title>
+</head>
+<body>
+    <h2>Apa itu FIELD?</h2>
+    <p>
+        Field adalah ruas yang dapat diisi dengan data. <br>Contoh field: <samp><input type="text" name="info" /></samp> <br> 
+        Field memiliki beberapa atribut yang harus diberikan: <br>
+        <ul>
+            <li><samp>type</samp> : tipe dari field.</li>
+            <li><samp>name</samp> : nama dari field yang akan menjadi kunci dan variable di dalam program.</li>
+        </ul>
+
+        <ol>
+            <li><samp>input type='text'</samp> : textbox yang bisa menerima inputan text misalkan username atau berupa inputan text yang pendek.</li>
+            <li><samp>input type='password'</samp> : textbox yang menerima inputan text, akan tetapi text yang diinput akan di tampilkan sebagai tanda bintang atau tanda titik, 
+            textbox ini biasanya digunakan untuk inputan password.</li>
+            <li><samp>input type='submit'</samp> : inputan ini berupa tombol (button) untuk memproses data inputan dari form.</li>
+            <li><samp>input type='checkbox'</samp> : inputan ini berupa checkbox yang dapat di ceklis oleh user.</li>
+            <li><samp>input type='radio'</samp> : inputan yang berupa radio group, dimana user dapat memilih salah satu dari pilihan yang disediakan, 
+            salah satu contoh penggunaan dari radio ini adalah jenis kelamin.</li>
+        </ol>
+
+        <h3>Textarea, Select, dan Option</h3>
+        <p>
+            Dalam HTML 5 terdapat beberapa tag terkait form yaitu: <br>
+            <ol>
+                <li><samp>legend</samp> : digunakan untuk menandai kumpulan objek input.</li>
+                <li><samp>input type='email'</samp> : digunakan khusus untuk input data dengan format email.</li>
+                <li><samp>input type='date'</samp> : digunakan khusus untuk input data dengan format tanggal seperti kalender.</li>
+            </ol>
+        </p>
+
+        <p>Contoh:</p>
+        <fieldset>
+            <legend>Login</legend>
+            <p>
+                <label>Usename :</label>
+                <input type="text" name="username" placeholder="username..">
+            </p>
+            <p>
+                <label>Password :</label>
+                <input type="password" name="password" placeholder="password..">
+            </p>
+            <p>
+                <label><input type="checkbox" name="remember" value="remember">Remember me</label>
+            </p>
+            <p>
+                <input type="submit" name="submit" value="login">
+            </p>
+        </fieldset>
+    </p>
+
+    <p>Contoh:</p>
+    <fieldset>
+        <legend>Contact</legend>
+        <p>
+            <label>Name :</label>
+            <input type="text" name="name" placeholder="your name..">
+        </p>
+        <p>
+            <label>Subject :</label>
+            <input type="text" name="subject" placeholder="subject..">
+        </p>
+        <p>
+            <label>Email :</label>
+            <input type="email" name="email" placeholder="your email..">
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Send">
+        </p>
+    </fieldset>
+
+    <p>Contoh:</p>
+    <fieldset>
+        <legend>Form</legend>
+        <p>
+            <label>Alamat Web :</label>
+            <input type="url" name="name" placeholder="Masukkan URL Web..">
+        </p>
+        <p>
+            <label>Tanggal Lahir :</label>
+            <input type="date" name="tanggal">
+        </p>
+        <p>
+            <label>Umur :</label>
+            <input type="number" name="umur" min="10" max="90">
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Send">
+        </p>
+    </fieldset>
+</body>
+</html>
