@@ -10,4 +10,4 @@
 
 ## Note
 
-Materi yang saya buat dan tulis bersumber dari  dosen Politeknik Negeri Lampung yang bernama Tri Sandhika Jaya S.Kom, M.Kom. Untuk lebih jelasnya mengenai beliau, kalian bisa mengunjungi laman youtube beliau yang bernama <a href="https://www.youtube.com/@TSJTvPro" title="Menuju Youtube Tri Sandhika Jaya">TSJ Tv</a>. Terima kasih.
+Materi yang saya buat dan tulis bersumber dari  dosen Politeknik Negeri Lampung yang bernama Tri Sandhika Jaya S.Kom, M.Kom. Untuk lebih jelasnya mengenai beliau, kalian bisa mengunjungi laman youtube beliau yang bernama <a href="https://www.youtube.com/@TSJTvPro" target="_blank" title="Menuju Youtube Tri Sandhika Jaya">TSJ Tv</a>. Terima kasih.
