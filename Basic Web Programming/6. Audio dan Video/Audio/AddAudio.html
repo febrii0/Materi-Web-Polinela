@@ -13,6 +13,10 @@
         th{
             font-weight: bold;
         }
+
+        samp{
+            color: green;
+        }
     </style>
 
 </head>
@@ -106,5 +110,86 @@
         </tr>
     </div>
     </table>
+
+    <p>
+        Format file yang biasanya digunakan adalah <samp>.mp3</samp> dan <samp>.mp4</samp> (<samp>.m4a</samp>), 
+        karena ukuran filenya relatif kecil. Sementara format <samp>.flac</samp> adalah format file audio dengan 
+        kualitas tinggi dan ukuran filenya relatif lebih besar.
+    </p>
+    <h3>Atribut Audio</h3>
+
+    <ol>
+        <li>Atribut <samp>control</samp></li>
+        <p>
+            Atribut ini berfungsi untuk mengaktifkan tombol kontrol seperti tombol play, pause, stop, scroll, dan volume. 
+            Jika bernilai <samp>true</samp>, maka nilainya boleh tidak disi. Nilai true artinya, kita akan mengaktifkan tombol kontrol 
+            dan jika nilainya dalse maka artinya kontrol tidak diaktifkan.
+        </p>
+
+        <li>Atribut <samp>autoplay</samp></li>
+        <p>
+            Atribut ini berfungsi untuk memutar audio secara otomatis. 
+            Nilai yang bisa diberikan pada atribut ini adalah true dan false. Nilai true artinya kita akan memutar audio secara otomatis, dan 
+            false artinya audio tidak akan diputar secara otomatis.
+        </p>
+
+        <li>Atribut <samp>loop</samp></li>
+        <p>
+            Atribut loop berfungsi untuk mengulang-ulang pemutaran audio. Ini seperti repeat one. Nilai yang bisa diberikan adalah true dan false.
+        </p>
+
+        <li>Atribut <samp>muted</samp></li>
+        <p>
+            Atribut ini berfungsi untuk men-senyapkan audio. Nilai yang bisa diberikan adalah true dan false.
+        </p>
+    </ol>
+
+    <h3>Tabel Atribut Audio</h3>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <tr class="table-dark">
+                <th>Attribute</th>
+                <th>Value</th>
+                <th>Desctiption</th>
+            </tr>
+
+            <tr>
+                <td>autoplay</td>
+                <td>autoplay</td>
+                <td>Specifies that audio will start playing as soon as it is ready</td>
+            </tr>
+
+            <tr>
+                <td>controls</td>
+                <td>controls</td>
+                <td>Specifies that audio controls should be displayed (such as a play/pause button etc)</td>
+            </tr>
+
+            <tr>
+                <td>loop</td>
+                <td>loop</td>
+                <td>Specifies that the audio will start over again, every time it is finished</td>
+            </tr>
+
+            <tr>
+                <td>muted</td>
+                <td>muted</td>
+                <td>Specifies that the audio output should be muted</td>
+            </tr>
+
+            <tr>
+                <td>preload</td>
+                <td>auto metadata none</td>
+                <td>Specifies if and how the author thinks tje audio should be loaded when the page loads</td>
+            </tr>
+
+            <tr>
+                <td>src</td>
+                <td>URL</td>
+                <td>Specifies the URL of the audio file</td>
+            </tr>
+        </table>
+    </div>
+
 </body>
 </html>
