@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menambahkan Video</title>
+
+    <style type="text/css">
+        th{
+            font-weight: bold;
+        }
+
+        samp{
+            color: green;
+        }
+
+        pre{
+            color: green;
+        }
+
+        #gray{
+            color: gray;
+        }
+
+        #tr{
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h2>Menambahkan Audio di HTML</h2>
+    <p>
+        Kita membutuhkan sebuah media player untuk menampilkan video di HTML. Sebelum ada HTML 5. media player di HTML dibuat dengan program eksternal seperti adobe flash. 
+        Namun, kini sudah tidak dipakai lagi. HTML sekarang punya tag baru untuk membuat media player, yakni tag <samp>&#60video&#62</samp>.
+    </p>
+
+    <h3>Susunan codenya seperti dibawah:</h3>
+    <pre>
+        &#60video controls&#62
+            &#60source src="file-video.webm" type="video/webm"&#47&#62
+            &#60source src="file-video.mp4" type="video/mp4"&#47&#62
+            Browser tidak mendukung tag video!
+        &#60&#47video&#62
+    </pre>
+    <p>Contoh:</p>
+
+    <video controls>
+        <source src="contoh-video.mp4" type="video/mp4" />
+        Browser tidak mendukung tag video, update browser!
+    </video>
+
+    <h3>Format Video yang didukung</h3>
+    <p>
+        Tidak semua format video dapat ditampilkan di HTML. Berikut ini beberapa format video yang didukung.
+    </p>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <tr class="table-dark">
+                <th>Format File</th>
+                <th>Media Type</th>
+            </tr>
+
+            <tr>
+                <td><samp>.mp4</samp></td>
+                <td>video/mp4</td>
+            </tr>
+
+            <tr>
+                <td><samp>.webm</samp></td>
+                <td>video/webm</td>
+            </tr>
+
+            <tr>
+                <td><samp>.ogg</samp></td>
+                <td>video/ogg</td>
+            </tr>
+        </table>
+    </div>
+
+    <p>
+        Jika kita punya video dengan format yang berbeda dari ketiga format diatas, maka kita harus mengubahnya agar bisa ditambahkan ke dalam HTML.
+    </p>
+
+    <h3>Tabel Atribut Video</h3>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <tr class="table-dark">
+                <th>Attribute</th>
+                <th>Value</th>
+                <th>Function</th>
+            </tr>
+
+            <tr>
+                <td><samp>autoplay</samp></td>
+                <td><samp>true/false</samp></td>
+                <td>Agar video dapat diputar otomatis</td>
+            </tr>
+
+            <tr>
+                <td><samp>controls</samp></td>
+                <td><samp>true/false</samp></td>
+                <td>Untuk mengaktifkan control video player</td>
+            </tr>
+
+            <tr>
+                <td><samp>loop</samp></td>
+                <td><samp>true/false</samp></td>
+                <td>Untuk memutar video terus-menerus</td>
+            </tr>
+
+            <tr>
+                <td><samp>muted</samp></td>
+                <td><samp>true/false</samp></td>
+                <td>Untuk menonaktifkan audio</td>
+            </tr>
+
+            <tr>
+                <td><samp>poster</samp></td>
+                <td>Image Path</td>
+                <td>Untuk menentukan gambar cover dari video</td>
+            </tr>
+
+            <tr>
+                <td><samp>width</samp> & <samp>height</samp></td>
+                <td>Angka</td>
+                <td>Untuk menentukan tinggi dan lebar video</td>
+            </tr>
+
+            <tr>
+                <td>playsinline</td>
+                <td><samp>true/false</samp></td>
+                <td>Untuk memutar video secara 'inline'</td>
+            </tr>
+        </table>
+    </div>
+
+    <h3>Video Sebagai Gambar Animasi GIF</h3>
+    <p>
+        Banyak website moderen saat ini menggunakan video sebagai ganti dari animasi GIF. Bahkan juga Google menyarankan untuk menggunakan video daripada GIF. Mengapa? 
+        Karena ukuran file video jauh lebih kecil dibandingkan dengan GIF dan juga tentunya akan mempengaruhi kecepatan download. Mari kita lihat:
+    </p>
+
+    <div lass="table-responsive">
+        <table class="table table-striped" rules="none" border="1">
+            <tr>home > tutorial > html > <b>video</b></tr>
+
+            <tr style="background-color: gray;" id="tr">
+                <td>Name</td>
+                <td>Size</td>
+                <td>Modified</td>
+            </tr>
+
+            <tr>
+                <td>cat-herd.gif</td>
+                <td id="gray">3,6 MiB</td>
+                <td id="gray">26/05/18 08.02</td>
+            </tr>
+
+            <tr>
+                <td>cat-herd.mp4</td>
+                <td id="gray">309,7 KiB</td>
+                <td id="gray">22/07/20 17.30</td>
+            </tr>
+
+            <tr>
+                <td>cat-herd.webm</td>
+                <td id="gray">178,4 KiB</td>
+                <td id="gray">22/07/20 17.30</td>
+            </tr>
+        </table>
+    </div>
+
+    <h3>Perbandingan Ukuran File Video</h3>
+    <p>
+        File <samp>cat-herd.gif</samp> punya ukuran 3,6 MB setelah diconvert formatnya menjadi <samp>.mp4</samp> dan <samp>.webm</samp>, 
+        ukurannya menjadi sangat kecil. Terbukti bukan? File video lebih kecil daripada GIF. <br><br>
+
+        Lalu, bagaimana cara membuat video menjadi gambar GIF di HTML. Caranya sama seperti menambahkan video biasa, tetapi kita harus mengaktifkan beberapa 
+        atribut seperti <samp>autoplay</samp>, <samp>muted</samp>, <samp>playinline</samp>, dan <samp>loop</samp>.
+    </p>
+    <p>Contoh:</p>
+    <video controls autoplay loop muted playinline>
+        <source src="cat-herd.webm" type="video/webm" />
+        <source src="car-herd.mp4" type="video/mp4" />
+    </video>
+
+    <h3>Subtitle Untuk Video</h3>
+    <p>
+        Subtitle adalah teks yang akan ditampilkan dalam video. Biasanya digunakan untuk terjemahan atau alih bahasa dari video dan juga membatu tuna rungu (orang tuli) 
+        untuk menyerap informasi pada video. Subtitle pada HTML dapat kita tambahkan dengan tag <samp>&#60track&#62</samp>. Tag ini memiliki atribut <samp>src</samp> yang akan digunakan untuk 
+        menambahkan file subtitle.
+    </p>
+
+    <h3>Susunan codenya seperti dibawah:</h3>
+    <pre>
+        &#60track src="sub-id.vtt"
+            kind="subtitles"
+            srclang="id"
+            label="Indonesia" &#47&#62
+    </pre>
+    <p>Contoh:</p>
+    <video controls>
+        <source src="cat-herd.webm" type="video/webm" />
+        <source src="car-herd.mp4" type="video/mp4" />
+        <track src="cat-herd-id.vtt" kind="subtitles" srclang="id" label="Indonesia" />
+    </video>
+
+    <h3>Menambahkan Video dari Youtube</h3>
+    <p>
+        Saat tidak ingin repot-repot mengubah format video, kita bisa memanfaatkan YouTube. Kita hanya tinggal upload saja videonya ke YouTube. Nanti kita akan dapat id unik dari video kita. 
+        Id unik ini bisa kita dapatkan dari URL video. ContohL 5HUUS8le0ec <br><br>
+        YouTube sendiri sudah memiliki media player, jadi kita tidak perlu membuatnya dengan tag <samp>&#60video&#62</samp>. Tag ini sebenarnya berfungsi untuk menambahkan halaman lain dalam sebuah frame.
+    </p>
+    <p>Contoh Video dari YouTube:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nHPJoPouNJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    
+</body>
+</html>

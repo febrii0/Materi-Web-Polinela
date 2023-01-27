@@ -1,0 +1,2 @@
+Konten dalam web, tidak hanya dalam bentuk teks dan gambar saja. Tapi juga bisa dalam bentuk multimedia seperti audio dan  video..
+Bagaimana cara menambahkan video di HTML? Mari kita bahas..
